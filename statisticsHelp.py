@@ -2,7 +2,7 @@
 
 import math
 
-#  Statistics helper will be able to solve statistics problems by
+# Statistics helper will be able to solve statistics problems by
 #calculating the problems for the user
 
 print("\nStatistics Helper!")
@@ -17,7 +17,7 @@ choice = input()
 
 #use if statements to determine which type of equation needs to be solved
 #Chebyshev's inequality equation
-if choice is 1:
+if choice is '1':
     #ask the user for the mean
     print("\nEnter the mean")
     mean = float(input())
@@ -44,8 +44,13 @@ if choice is 1:
     print("The lower bound is " + str(lowerBound))
     print("The upper bound is " + str(upperBound))
 
+#Find IQR
+if choice is '2':
+    #ask the user for something
+    print("iqr choice print!!!")
+
 #Find P(A or B)
-if choice is 3:
+if choice is '3':
     #ask for the values of P(A) and P(B)
     a = float(input("Enter the value of A\n"))
     b = float(input("Enter the value of B\n"))
